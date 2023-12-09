@@ -5,7 +5,7 @@ module Event
     NB_BLUE_CUBES_LOADED = 14
 
     # Other Settings
-    EVENT_DATE_FILE = "data.txt"
+    EVENT_DATA_FILE = "data.txt"
     DAY = 2
 
     def self.event_description()
@@ -15,7 +15,7 @@ module Event
     end
     
     def self.get_event_data()
-        return File.open(EVENT_DATE_FILE).readlines
+        return File.open(EVENT_DATA_FILE).readlines
     end
 
     def self.main()
@@ -49,7 +49,7 @@ module Event
                                 when "blue"
                                     cubes_showed <= NB_BLUE_CUBES_LOADED
                                 end
-                # The Elf showed us more cubes than possible -> this drame isn't realisable
+                # The Elf showed us more cubes than possible -> this draw isn't realisable
                 break if !is_realisable
             end
 
