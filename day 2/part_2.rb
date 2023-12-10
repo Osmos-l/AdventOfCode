@@ -1,9 +1,4 @@
 module Event
-    # AdventOfCode Settings
-    NB_RED_CUBES_LOADED = 12
-    NB_GREEN_CUBES_LOADED = 13
-    NB_BLUE_CUBES_LOADED = 14
-
     # Other Settings
     EVENT_DATA_FILE = "data.txt"
     DAY = 2
